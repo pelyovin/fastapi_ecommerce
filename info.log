@@ -13,3 +13,6 @@ Log: [064ec3a2-dcf9-41d0-a5e7-d2fa92fa3700:2024-12-08T18:23:08.194123+0300 - WAR
 Log: [3bbac676-f7ba-4a4c-80e0-fa4755a951d4:2024-12-08T18:23:41.167297+0300 - INFO - Successfully accessed /category/]
 Log: [e124b178-fbbf-4050-8f9c-41136b9fcd8e:2024-12-08T18:23:56.941958+0300 - WARNING - Request to /category/ failed]
 Log: [7d7acb3a-463f-4da0-83cd-eeb56410222a:2024-12-08T18:24:31.190823+0300 - WARNING - Request to /auth/read_current_user failed]
+Log: [92253cd3-7f84-4274-b0a7-519a3117eeec:2024-12-08T18:33:06.800095+0300 - INFO - Successfully accessed /]
+Log: [766f977f-8c30-4b6f-bfa6-6c289469015f:2024-12-08T18:34:57.968906+0300 - INFO - Successfully accessed /docs]
+Log: [4dc49130-25fa-43be-a4f3-8853f21d6e2b:2024-12-08T18:34:58.079525+0300 - INFO - Successfully accessed /openapi.json]

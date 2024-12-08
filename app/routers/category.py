@@ -68,7 +68,7 @@ async def update_category(db: Annotated[AsyncSession, Depends(get_db)], category
 
 @router.delete('/')
 async def delete_category(db: Annotated[AsyncSession, Depends(get_db)], category_id: int,
-                          get_user: Annotated[dict, get_current_user]):
+                          get_user: Annotated[dict, Depends(get_current_user)]):
     if get_user.get('is_admin'):
         category = await db.scalar(select(Category).where(Category.id == category_id))
         if category is None:
