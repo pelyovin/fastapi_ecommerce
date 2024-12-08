@@ -1,0 +1,15 @@
+Log: [2289536b-306a-4908-91b6-ba9ef992b231:2024-12-08T18:21:31.866800+0300 - INFO - Successfully accessed /]
+Log: [29249c3c-faba-4e84-bbf6-ab75ff3221a4:2024-12-08T18:21:32.027765+0300 - WARNING - Request to /favicon.ico failed]
+Log: [c508fa47-f7b2-4188-a7ee-829a6b75fef1:2024-12-08T18:21:49.275548+0300 - INFO - Successfully accessed /docs]
+Log: [5ac6b2b2-d028-4126-bc6d-2263e46ada02:2024-12-08T18:21:49.333080+0300 - WARNING - Request to /favicon.ico failed]
+Log: [49c6dc9e-85ee-405a-af1d-a7e3e4875f00:2024-12-08T18:22:25.531524+0300 - INFO - Successfully accessed /docs]
+Log: [f22ff13a-345e-4890-a128-5bcccaaa9a54:2024-12-08T18:22:25.653922+0300 - INFO - Successfully accessed /openapi.json]
+Log: [23f75af5-da7b-4602-be53-91c0d21d5e4a:2024-12-08T18:22:32.965664+0300 - ERROR - Request to /auth/ failed: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "users_email_key"
+DETAIL:  Key (email)=(string) already exists.
+[SQL: INSERT INTO users (first_name, last_name, username, email, hashed_password, is_active, is_admin, is_supplier, is_customer) VALUES ($1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::BOOLEAN, $7::BOOLEAN, $8::BOOLEAN, $9::BOOLEAN) RETURNING users.id]
+[parameters: ('string', 'string', 'string', 'string', '$2b$12$WYO9TVJN5.n3UT8U8wjIz./XBJwihjAu/z8Rjk/mZPEcv.Uzq1xoy', True, False, False, True)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)]
+Log: [064ec3a2-dcf9-41d0-a5e7-d2fa92fa3700:2024-12-08T18:23:08.194123+0300 - WARNING - Request to /reviews/ failed]
+Log: [3bbac676-f7ba-4a4c-80e0-fa4755a951d4:2024-12-08T18:23:41.167297+0300 - INFO - Successfully accessed /category/]
+Log: [e124b178-fbbf-4050-8f9c-41136b9fcd8e:2024-12-08T18:23:56.941958+0300 - WARNING - Request to /category/ failed]
+Log: [7d7acb3a-463f-4da0-83cd-eeb56410222a:2024-12-08T18:24:31.190823+0300 - WARNING - Request to /auth/read_current_user failed]
